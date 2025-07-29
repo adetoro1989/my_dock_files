@@ -2,6 +2,8 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y apache2
+RUN apt install nodejs -y
+RUN apt install npm -y
 
 # Copy your web project files into the Nginx default web directory
 COPY . /var/www/html
