@@ -1,4 +1,4 @@
-# Use the official Nginx image as a base
+# Use the official ubuntu image as a base
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y apache2
